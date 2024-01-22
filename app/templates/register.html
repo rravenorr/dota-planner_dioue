@@ -2,27 +2,8 @@
 {% extends "base.html" %}
     {% block title %} Create an Account{% endblock %}
 
-    {% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">{% endblock%}
+    {% block css %}{% endblock%}
     {% block head %}{% endblock %}
 
     {% block body %}
-    <div class="center-screen">
-        <div class="center-container">
-            <div class="container">
-                <h1>Create an Account</h1>
-                <form action="{{ url_for('register') }}" method="post">
-                    {{ form.hidden_tag() }}
-
-                    <div class="dropdown-group">
-                        {{ form.role.label }}
-                        {{ form.role(class="dropdown", id="account_type") }}
-                        <label class="dropdown-label" for="account_type">Account Type</label>
-                    </div>
-
-                    {{ form.submit(class="button", value="Continue") }}
-                    <p><a href="{{ url_for('home') }}" class="home-button">Home</a></p>
-                </form>
-            </div>
-        </div>
-    </div>
     {% endblock%}
