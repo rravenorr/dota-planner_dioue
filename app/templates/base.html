@@ -23,8 +23,9 @@ Base templates for creating the structure of HTML. Read the code - Joe
             <h3>Dota Maker</h3>
         </div>
         <ul class="nav-list">
-            <li><a href="#">Schedules</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="{{ url_for('views.home')}}" id='home'>Home</a></li>
+            <li><a href="#schedule">Schedules</a></li>
+            <li><a href="#footer">About us</a></li>
             <li><a href="{{ url_for('auth.login')}}" id="login">Login</a></li>
             <li><a href="{{ url_for('auth.register')}}" id="register">Register</a></li>
         </ul>

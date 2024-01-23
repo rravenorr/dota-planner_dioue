@@ -2,13 +2,14 @@
     {% block title %} DotaMaker | Home {% endblock %}
     {% block head %}{% endblock %}
     {% block body %}
-    <div class="introduction">
+    <div class="introduction" id="home">
         <div class="getstart">
-            <p id="introductory-text">Dive into the world of Dota tournaments effortlessly! Create and manage your own thrilling brackets in just a few clicks. Whether you're a seasoned captain or a newcomer, our user-friendly platform ensures your journey from setup to showdown is a breeze. Ready to kick off your tournament? Let's get started on your path to Dota glory!</p>
-            <a href="{{ url_for('auth.login') }}">Get Started</a>
+            <h4 class="introductory-text typewriter">CREATE. MANAGE.</h4>
+            <h4 class="introductory-text">TOURNAMENTS</h4> 
         </div>
+        <a href="{{ url_for('auth.login') }}">Get Started</a>
     </div>
-    <div class="schedules">
+    <div class="schedules" id="schedule">
         <div class="schedule-header">
             <h2>Schedules</h2>
         </div>
@@ -25,7 +26,7 @@
         <div class="footer-logo">
             <img src="{{ url_for('static', filename='/img/logo-transparent.png')}}" alt="footer logo">
         </div>
-        <div class="footer-links">
+        <div class="footer-links" id="footer">
             <ul>
                 <li>Random Links</li>
                 <li>Random Links</li>
