@@ -16,10 +16,8 @@ Base templates for creating the structure of HTML. Read the code - Joe
     {% block head %}{% endblock%}
 </head>
 <body>
-    <!-- Background -->
-    <div id="background"></div>
     <!-- Navigation -->
-    <div class="navbar">
+    <nav class="navbar">
         <div class="nav-title">
             <img src="{{ url_for('static', filename='/img/logo-transparent.png')}}" alt="Dota Maker Logo">
             <h3>Dota Maker</h3>
@@ -30,7 +28,7 @@ Base templates for creating the structure of HTML. Read the code - Joe
             <li><a href="{{ url_for('auth.login')}}" id="login">Login</a></li>
             <li><a href="{{ url_for('auth.register')}}" id="register">Register</a></li>
         </ul>
-    </div>
+    </nav>
     <!-- here goes the body block structuring for the code -->
     {%block body%}{%endblock%}
     <!-- bootstrap related js -->
